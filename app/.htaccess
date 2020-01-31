@@ -1,0 +1,4 @@
+AuthUserFile D:/Users/Robert/Documents/z_other/coding/php/z_other/scratchpad/upload-and-download-files/app/.htpasswd
+AuthType Basic
+AuthName "yellowheros repository"
+Require valid-user
