@@ -27,7 +27,8 @@ function forceDownload($filePath = '', $fileName = '', $mime = ''): bool
 {
     $size = filesize($filePath);
     header('Content-Description: File Transfer');
-    //header('Content-Disposition: attachment; filename="' . $fileName . '"'); // $fileName is what you want displayed in the 'open with / save' pop-up
+    //header('Content-Disposition: attachment; filename="' . $fileName . '"'); // $fileName is what you want displayed in the 'open with / save' dialog
+    header('Content-Disposition: inline; filename="' . $fileName . '"'); // $fileName is what you want displayed in the 'open with / save' dialog
     header('Content-Type: ' . $mime);
     header('Connection: Keep-Alive');
     header('Expires: 0');
