@@ -1,8 +1,8 @@
-# repo
+# Repo
 A small application that offers file upload and downloading/viewing right from your browser.
 The application is password protected using .htpasswd (Apache) and .htaccess.
 
-#### usage
+#### Usage
 When you enter the application, you're presented with an uploader and a list view of all available titles in your repository.
 You can upload a file, after which, the list with uploaded files is updated and shown immediately in the browser.
 _(all uploads are currently stored in folder: app/repo/uploads)_
