@@ -15,7 +15,8 @@ A pop-up window will ask you to select an application to run the file with - the
 This small app was banged together fast, just to get a feel for the moving parts / potential challenges.
 So, currently we just have a collection of files, without any organisation to the code (models/views/controllers):
 1. refactor to OOP and autoloading to allow for easier maintenance and allow this app to be 'plugged-in' in e.g. Jimmy.
-2. implement exceptions handling / error handler.
+2. implement AJAX requests (xhr)
+3. implement exceptions handling / error handler.
 
 #### Ideas for improvement
 1. allow for categories of file uploads
