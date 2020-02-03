@@ -32,5 +32,6 @@ if(isset($_POST['submit'])) {
         fclose($temp);
         fclose($target);
         unlink($_FILES['file']['tmp_name']);
-        //echo "File uploaded successfully (" . $bytesUploaded . " bytes ).";
+
+        header('Location: ./index.php'); // go back to repo view
 }
