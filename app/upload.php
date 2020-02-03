@@ -2,10 +2,11 @@
 set_time_limit(0);
 
 if(isset($_POST['submit'])) {
-        // create uploads directory if does not exist
-        if (!file_exists('uploads')) {
-            mkdir('uploads', 0777);
-        }
+    $path = __DIR__ . '/repo/uploads'; // path to the uploads folder
+    // create uploads directory if does not exist
+    if (!file_exists($path)) {
+        mkdir($path, 0777);
+    }
 
         $tempFile = $_FILES['userUpload']['tmp_name']; // the temp location on server storing the file the user selected using a multipart/form-data enctype
         $origFileSize = filesize($tempFile); // get the filesize
